@@ -8,7 +8,7 @@ import {
 
 import theme from "@theme/index";
 
-import { NewGroup } from "./src/screens/NewGroup";
+import { Players } from "./src/screens/Players";
 import { Loading } from "@components/Loading";
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar style="light" />
-      {fontsLoaded ? <NewGroup /> : <Loading />}
+      {fontsLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }
